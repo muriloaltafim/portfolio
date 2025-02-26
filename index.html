@@ -3,116 +3,309 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfólio | Murilo Altafm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
 <header>
-    <h1>Bem-vindo ao Meu Portfólio</h1>
+    <div class="header-content">
+        <h1>Bem-vindo ao Meu Portfólio</h1>
+        <p>Murilo Altafm</p>
+    </div>
 </header>
 
 <nav aria-label="Principal">
-    <a href="#about">Sobre</a>
-    <a href="#projects">Projetos</a>
-    <a href="#languages">Linguagens</a>
-    <a href="#contact">Contato</a>
+    <a href="#about"><i class="fas fa-user"></i> Sobre</a>
+    <a href="#projects"><i class="fas fa-code"></i> Projetos</a>
+    <a href="#skills"><i class="fas fa-laptop-code"></i> Habilidades</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contato</a>
 </nav>
 
 <div class="container">
     <section id="about" class="section">
         <h2>Sobre Mim</h2>
-        <p>Olá, meu nome é Murilo Altafim, tenho 19 anos e sou um programador front-end iniciante no ramo.</p>
-        <p>Aqui neste meu portfólio tenho linkado alguns dos meus projetos.</p>
+        <div class="about-content">
+            <div class="profile-image">
+                <!-- Adicione sua foto aqui -->
+                <img src="1737649977959.jpg" alt="Murilo Altafm">
+            </div>
+            <div class="profile-info">
+                <p>Olá, meu nome é <strong>Murilo Altafim</strong>, tenho 19 anos e sou um programador front-end iniciante com paixão por criar interfaces intuitivas e atraentes.</p>
+                <p>Estou constantemente aprimorando minhas habilidades em desenvolvimento web, com foco em HTML, CSS, JavaScript e ferramentas modernas.</p>
+                <p>Neste portfólio, você encontrará alguns dos meus projetos que demonstram minha jornada no mundo da programação.</p>
+                <div class="social-links">
+                    <a href="https://github.com/muriloaltafim" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/murilo-altafim-7a978b311/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects" class="section projects">
+    <section id="projects" class="section">
         <h2>Meus Projetos</h2>
-        <div class="project">
-            <img src="project1.jpg" alt="Projeto 1">
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto 1.</p>
-        </div>
-        <div class="project">
-            <img src="project2.jpg" alt="Projeto 2">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2.</p>
-        </div>
-        <div class="project">
-            <img src="project3.jpg" alt="Projeto 3">
-            <h3>Projeto 3</h3>
-            <p>Descrição do projeto 3.</p>
+        <div class="projects">
+            <div class="project">
+                <div class="project-image">
+                    <a href="https://mma-galeria-fotos.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <img src="fotoalbum-t.jpg" alt="Galeria de Fotos">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3>Galeria de Fotos</h3>
+                    <p>Aplicação que permite inserir imagens utilizando URLs. O usuário pode adicionar, visualizar e gerenciar uma coleção de imagens em uma interface amigável.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>jQuery</span>
+                    </div>
+                    <a href="https://mma-galeria-fotos.vercel.app/" class="button" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="project-image">
+                    <a href="https://murilo-agenda-de-contatos.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <img src="istockphoto-663925880-612x612.jpg" alt="Agenda de Contatos">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3>Agenda de Contatos</h3>
+                    <p>Aplicativo de agenda que permite adicionar, editar e gerenciar contatos com nome e telefone. Interface simples e intuitiva para organização de contatos pessoais.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://murilo-agenda-de-contatos.vercel.app/" class="button" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="project-image">
+                    <a href="https://exerc-cio-jquery-topaz-five.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <img src="listas-de-tarefas-significado.jpeg" alt="Lista de Tarefas">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3>Lista de Tarefas</h3>
+                    <p>Este projeto é uma aplicação de lista de tarefas, contendo um formulário com um campo para adicionar o nome da tarefa e um botão para adicionar a tarefa. Ao clicar nos itens da lista, aparecerá uma linha em cima do texto, indicando que a tarefa já foi concluída.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>jQuery</span>
+                    </div>
+                    <a href="https://exerc-cio-jquery-topaz-five.vercel.app/" class="button" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="project-image">
+                    <a href="https://murilo-projeto-calculadora-medias-psi.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <img src="OIP (1).jpg" alt="Calculadora de Médias">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3>Calculadora de Médias</h3>
+                    <p>Neste projeto criei uma calculadora de Médias que permite ao usuário definir uma nota mínima. Contém campos para nome da atividade e nota, indicando aprovação ou reprovação conforme a nota mínima estabelecida.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://murilo-projeto-calculadora-medias-psi.vercel.app/" class="button" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="project-image">
+                    <a href="https://site-gamesshop-ajiw.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <img src="loja.jpg" alt="Loja de Jogos">
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3>Loja de Jogos</h3>
+                    <p>Uma página web de loja de jogos com catálogo de produtos e formulário de contato. Design responsivo e moderno para uma experiência de usuário agradável.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href="https://site-gamesshop-ajiw.vercel.app/" class="button" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="languages" class="section">
-        <h2>Linguagens</h2>
-        <p>Tenho experiência com as seguintes linguagens de programação e tecnologias:</p>
-        <div class="languages-logos">
-            <div class="logo">
-                <img src="html5-logo-file-html-shiny-icon-svg-wikimedia-commons-11 - Copia.png" alt="" title="HTML">
+    <section id="skills" class="section">
+        <h2>Minhas Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Tecnologias</h3>
+                <div class="skill-item">
+                    <span class="skill-name">HTML</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">jQuery</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 65%"></div>
+                    </div>
+                    <span class="skill-percentage">65%</span>
+                </div>
             </div>
-            <div class="logo">
-                <img src="css-3-logo.png" alt="CSS" title="CSS">
-            </div>
-            <div class="logo">
-                <img src="JavaScript-Emblem.png" alt="JavaScript" title="JavaScript">
-            </div>
-            <div class="logo">
-                <img src="github_PNG80.png" alt="github" title="github">
-            </div>
-            <div class="logo">
-                <img src="OIP.jpg" alt="Git" title="Git">
+            
+            <div class="skill-category">
+                <h3>Ferramentas</h3>
+                <div class="languages-logos">
+                    <div class="logo">
+                        <img src="html5-logo-file-html-shiny-icon-svg-wikimedia-commons-11 - Copia.png" alt="HTML" title="HTML">
+                    </div>
+                    <div class="logo">
+                        <img src="css-3-logo.png" alt="CSS" title="CSS">
+                    </div>
+                    <div class="logo">
+                        <img src="JavaScript-Emblem.png" alt="JavaScript" title="JavaScript">
+                    </div>
+                    <div class="logo">
+                        <img src="github_PNG80.png" alt="GitHub" title="GitHub">
+                    </div>
+                    <div class="logo">
+                        <img src="OIP.jpg" alt="Git" title="Git">
+                    </div>
+                    <div class="logo">
+                        <img src="941140.webp" alt="jQuery" title="jQuery">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="section">
         <h2>Contato</h2>
-        <p>Entre em contato comigo por e-mail ou telefone:</p>
-        <div class="contact-info">
-            <div class="contact-item">
-                <strong>E-mail:</strong> 
-                <a href="mailto:muriloaltafim10@gmail.com">muriloaltafim10@gmail.com</a>
+        <p>Estou sempre aberto a novas oportunidades e colaborações. Vamos conversar!</p>
+        
+        <div class="contact-methods">
+            <div class="contact-details">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <strong>E-mail:</strong> 
+                        <a href="mailto:muriloaltafim10@gmail.com">muriloaltafim10@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <strong>Celular:</strong> 
+                        <a href="tel:+55(16)99650-1868">+55 (16) 99650-1868</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <strong>Localização:</strong> São Paulo, Brasil
+                    </div>
+                </div>
             </div>
-            <div class="contact-item">
-                <strong>Celular:</strong> 
-                <a href="tel:+55(16)99650-1868">+55 (16) 998650-1868</a>
+            
+            <div class="contact-form">
+                <h3>Envie-me uma mensagem</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Enviar Mensagem</button>
+                </form>
             </div>
         </div>
     </section>
 </div>
 
 <footer role="contentinfo">
-    <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados. <a href="#about">Voltar ao topo</a></p>
+    <div class="footer-content">
+        <div class="footer-social">
+            <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2025 Murilo Altafm. Todos os direitos reservados.</p>
+        <p><a href="#about">Voltar ao topo <i class="fas fa-arrow-up"></i></a></p>
+    </div>
 </footer>
 
 <script>
-    // Adicionando responsividade dinâmica com JavaScript
-    function adjustProjectsLayout() {
-        const projects = document.querySelector('.projects');
-        if (window.innerWidth < 768) {
-            projects.style.flexDirection = 'column';
-        } else {
-            projects.style.flexDirection = 'column';
-        }
-    }
+    // Gerenciar formulário de contato
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        
+        // Aqui você adicionaria a lógica para enviar o email
+        // Por exemplo, usando um serviço como EmailJS ou uma API própria
+        
+        alert(`Obrigado ${name}! Sua mensagem foi enviada com sucesso. Retornarei em breve.`);
+        this.reset();
+    });
 
-    // Debounce para melhorar a performance
-    function debounce(func, wait) {
-        let timeout;
-        return function(...args) {
-            const context = this;
-            clearTimeout(timeout);
-            timeout = setTimeout(() => func.apply(context, args), wait);
-        };
-    }
+    // Animação suave de rolagem para os links de navegação
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 
-    const debouncedResize = debounce(adjustProjectsLayout, 150);
-
-    window.addEventListener('resize', debouncedResize);
-    window.addEventListener('DOMContentLoaded', adjustProjectsLayout);
+    // Destacar item de menu ativo durante a rolagem
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('nav a');
+        
+        let currentSection = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (window.pageYOffset >= sectionTop - 200) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === currentSection) {
+                link.classList.add('active');
+            }
+        });
+    });
 </script>
 
 </body>
